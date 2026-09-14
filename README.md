@@ -23,6 +23,18 @@ The system is intended to handle:
 - Accurate spatial correspondence
 - Sub-pixel registration accuracy
 
+## Objective
+
+Given a source lunar image and a reference lunar image, the system will:
+
+1. Identify corresponding features between the two images.
+2. Reject incorrect or geometrically inconsistent matches.
+3. Estimate the geometric transformation between the images.
+4. Register the source image with the reference image.
+5. Refine the registration toward sub-pixel accuracy.
+6. Produce corresponding match points.
+7. Evaluate registration quality using quantitative metrics.
+
 # Potential Structure
 ```
 lunar-image-registration/
