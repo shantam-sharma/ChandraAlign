@@ -1,6 +1,28 @@
 # ChandraAlign
 Multi-modal, Sun angle and scale invariant image correspondence using Chandrayaan-2 optical images (OHRC, TMC and IIRS)
 
+## Overview
+
+Lunar missions produce images of the same region of the Moon using different
+sensors, viewing geometries, spatial resolutions, and illumination conditions.
+
+Because of these differences, images representing the same lunar terrain may
+look significantly different and cannot always be directly aligned using
+conventional image-matching techniques.
+
+This project aims to develop a generic software system for finding
+correspondences between Chandrayaan-2 optical images and lunar reference
+images, followed by accurate image registration.
+
+The system is intended to handle:
+
+- Different imaging sensors and modalities
+- Changes in Sun azimuth and elevation
+- Scale differences
+- Viewpoint and geometric variations
+- Accurate spatial correspondence
+- Sub-pixel registration accuracy
+
 # Potential Structure
 ```
 lunar-image-registration/
@@ -105,3 +127,4 @@ lunar-image-registration/
     ├── run_registration.py
     └── benchmark.py
 ```
+
